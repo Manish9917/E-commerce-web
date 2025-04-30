@@ -96,22 +96,47 @@ const Product = () => {
                             <tbody>
                                 <tr>
                                     <td className="text-gray-600 font-medium">Brand</td>
-                                    <td className="text-gray-800/50 ">Generic</td>
+                                    <td className="text-gray-800/50">{productData.brand}</td>
                                 </tr>
                                 <tr>
                                     <td className="text-gray-600 font-medium">Color</td>
-                                    <td className="text-gray-800/50 ">Multi</td>
+                                    <td className="text-gray-800/50">{productData.color}</td>
                                 </tr>
                                 <tr>
                                     <td className="text-gray-600 font-medium">Category</td>
-                                    <td className="text-gray-800/50">
-                                        {productData.category}
-                                    </td>
+                                    <td className="text-gray-800/50">{productData.category}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Sub Category</td>
+                                    <td className="text-gray-800/50">{productData.subCategory}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Fabric</td>
+                                    <td className="text-gray-800/50">{productData.fabric}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Care Instructions</td>
+                                    <td className="text-gray-800/50">{productData.careInstructions}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Available Sizes</td>
+                                    <td className="text-gray-800/50">{productData.sizes.join(", ")}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Stock</td>
+                                    <td className="text-gray-800/50">{productData.stock} items left</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Tags</td>
+                                    <td className="text-gray-800/50">{productData.tags.join(", ")}</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-gray-600 font-medium">Rating</td>
+                                    <td className="text-gray-800/50">{productData.rating} ⭐ ({productData.reviewCount} reviews)</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-
                     <div className="flex items-center mt-10 gap-4">
                         <button onClick={() => addToCart(productData._id)} className="w-full py-3.5 bg-gray-100 text-gray-800/80 hover:bg-gray-200 transition">
                             Add to Cart
