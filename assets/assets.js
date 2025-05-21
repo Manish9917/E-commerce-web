@@ -1623,6 +1623,7 @@ export const productsDummyData = [
     "rating": 4.7,
     "reviewCount": 42,
     "stock": 25,
+
     "tags": ["Party Wear", "Festive Wear", "Elegant", "Man's Fashinable Dress"],
     "date": 1738668619198,
     "__v": 0
@@ -1912,7 +1913,7 @@ export const productsDummyData = [
     "reviewCount": 42,
     "stock": 25,
     "tags": ["Party Wear", "Festive Wear", "Elegant", "Man's Fashinable Dress"],
-    "date": 1738668619198,
+      "date": 1738668619198,
     "__v": 0
   },
   {

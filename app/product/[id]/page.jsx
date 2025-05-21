@@ -118,18 +118,18 @@ const Product = () => {
                                     <td className="text-gray-600 font-medium">Care Instructions</td>
                                     <td className="text-gray-800/50">{productData.careInstructions}</td>
                                 </tr>
-                                <tr>
+                                {/* <tr>
                                     <td className="text-gray-600 font-medium">Available Sizes</td>
                                     <td className="text-gray-800/50">{productData.sizes.join(", ")}</td>
-                                </tr>
+                                </tr> */}
                                 <tr>
                                     <td className="text-gray-600 font-medium">Stock</td>
                                     <td className="text-gray-800/50">{productData.stock} items left</td>
                                 </tr>
-                                <tr>
+                                {/* <tr>
                                     <td className="text-gray-600 font-medium">Tags</td>
                                     <td className="text-gray-800/50">{productData.tags.join(", ")}</td>
-                                </tr>
+                                </tr> */}
                                 <tr>
                                     <td className="text-gray-600 font-medium">Rating</td>
                                     <td className="text-gray-800/50">{productData.rating} ⭐ ({productData.reviewCount} reviews)</td>
